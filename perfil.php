@@ -43,7 +43,7 @@
 <div class="container-fluid bg1 text-center" id="quem">
 
   <h3>Quem sou eu? </h3>
-  <img src="images/foto-perfil.jpg" class="img-responsive img-redonda" style="display:inline" alt="Foto" width="200">
+  <img src="assets/img/foto-perfil.jpg" class="img-responsive img-redonda" style="display:inline" alt="Foto" width="200">
   <form action="" method="POST" enctype="multipart/form-data" class="needs-validation container" novalidate>
     <input type="file" name="foto" id="foto" />
 
