@@ -155,7 +155,7 @@
   <!-- FOOTER -->
   <footer class="container">
     <p class="float-end"><a href="#">Ir para o topo</a></p>
-    <p>&copy; 2021 Edson Maia &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
+    <p>&copy; 2022 Lucas Correia &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
   </footer>
 </main>
 
