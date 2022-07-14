@@ -43,7 +43,7 @@
     
 <main class="form-signin">
   <form action="acoes/login.php" method="POST">
-
+    <?php include_once 'acoes/escreve-mensagem.php'?>
     <h1 class="h3 mb-3 fw-normal">Login</h1>
 
     <div class="form-floating">

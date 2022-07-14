@@ -1,3 +1,10 @@
+<?php
+
+    session_start();
+    require_once 'acoes/verifica-logado.php';
+
+?>
+
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -59,6 +66,7 @@
           </li>
 
         </ul>
+        <div class="dados-usuario"><?= $_SESSION['email']; ?></div>
         <a href="logout.php" class="btn btn-danger">Sair</a>
       </div>
     </div>

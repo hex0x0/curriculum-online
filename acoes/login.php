@@ -91,7 +91,7 @@ if(isset($_POST['bt_entrar'])){
 
         $_SESSION['mensagem'] = 'Usuário logado com sucesso!';
         $_SESSION['status'] = 'Sucesso!';
-        $_SESSION['idusuario'] = $dados['idusuarios'];
+        $_SESSION['idusuarios'] = $dados['idusuarios'];
         $_SESSION['email'] = $dados['email'];
         header('Location: ../painel.php');
 
