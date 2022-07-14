@@ -22,7 +22,7 @@
         //Sql
 
         $sql = "INSERT INTO usuarios (nome, nacionalidade, estado_civil, idade, endereco, telefone, email, senha ) 
-        VALUES ('$nome', ' $nacionalidade', '$estado_civil', '$idade', '$endereco', '$celular', ' $email', '$senha')";
+        VALUES ('$nome', ' $nacionalidade', '$estado_civil', '$idade', '$endereco', '$telefone', ' $email', '$senha')";
         
 
         //se true

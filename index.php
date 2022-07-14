@@ -1,3 +1,10 @@
+<?php
+
+  session_start();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -35,21 +42,21 @@
   <body class="text-center">
     
 <main class="form-signin">
-  <form action="" method="POST">
+  <form action="acoes/login.php" method="POST">
 
     <h1 class="h3 mb-3 fw-normal">Login</h1>
 
     <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="nome@example.com.br" autofocus>
+      <input type="email" class="form-control" id="floatingInput" name="email" placeholder="nome@example.com.br" autofocus>
       <label for="floatingInput">E-mail</label>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
+      <input type="password" class="form-control" id="floatingPassword" name="senha" placeholder="Senha">
       <label for="floatingPassword">Senha</label>
     </div>
     <div class='alert'> Não tem login? <a class='btn btn-lg btn-warning' href='cadastrar-usuario.php'> Cadastre-se </a> </div>
 
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Entrar</button>
+    <button class="w-100 btn btn-lg btn-primary" type="submit" name="bt_entrar">Entrar</button>
     <p class="mt-5 mb-3 text-muted"> Lucas Correia &copy; 2022</p>
   </form>
 </main>
