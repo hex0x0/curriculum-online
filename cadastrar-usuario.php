@@ -95,7 +95,7 @@
 
       <div class="col-md-12">
         <label for="celular" class="form-label">Celular</label>
-        <input type="text" class="form-control" id="celular" name="celular" placeholder="(99) 99999-9999" required>
+        <input type="text" class="form-control" id="telefone" name="telefone" placeholder="(99) 99999-9999" required>
         <div class="invalid-feedback">
           Digite o número do seu celular com DDD.
         </div>
