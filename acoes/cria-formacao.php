@@ -25,8 +25,10 @@
 
         if($resultado){
             $_SESSION['mensagem'] = 'Formacao cadastrada!';
-            $_SESSION['erro'] = 'Algum problema ocorreu!';
+          
             header('Location: ../painel.php');
+        }else{
+            $_SESSION['erro'] = 'Algum problema ocorreu!';
         }
 
     }
