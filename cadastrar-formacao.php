@@ -1,3 +1,18 @@
+<?php
+
+  session_start();
+
+
+  $id_logado = $_SESSION['idusuarios'];
+  $email_logado = $_SESSION['email'];
+
+
+
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
  <head>
@@ -108,7 +123,7 @@
         <input type="hidden" id="idusuario" name="idusuario" />
       </div>
       <br>
-      <button class="w-100 btn btn-primary btn-lg" type="submit" name="bt_cadastrar">
+      <button class="w-100 btn btn-primary btn-lg" type="submit" name="bt_cadastrar_formacao">
       Cadastrar
       </button>
   

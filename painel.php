@@ -16,7 +16,8 @@
     <title>Currículo Online</title>
  
     <!-- Bootstrap core CSS -->
-<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/geral.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
