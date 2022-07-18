@@ -1,7 +1,8 @@
 <?php
 
   session_start();
-  include_once 'acoes/consulta-usuario.php'
+  include_once 'acoes/verifica-logado.php';
+  include_once 'acoes/consulta-usuario.php';
 
 ?>
 
@@ -61,23 +62,23 @@
 
       <div class="col-sm-12">
         <label for="nome" class="form-label">Nome Completo</label>
-        <input type="text" class="form-control" id="nome" placeholder="" value="<?=$nome;?>" required>
+        <input type="text" class="form-control" id="nome" name="nome" placeholder="" value="<?=$nome;?>" required>
         <div class="invalid-feedback">
-          <?= $nome; ?>
+        Digite o seu nome completo.
         </div>
       </div>
 
       <div class="col-sm-12">
         <label for="nacionalidade" class="form-label">Nacionalidade</label>
-        <input type="text" class="form-control" id="nacionalidade" placeholder="" value="<?=$nacionalidade;?>" required>
+        <input type="text" class="form-control" id="nacionalidade" name="nacionalidade" placeholder="" value="<?=$nacionalidade;?>" required>
         <div class="invalid-feedback">
-          <?= $nacionalidade; ?>
+        Digite a sua nacionalidade.
         </div>
       </div>
 
       <div class="col-md-12">
         <label for="estado_civil" class="form-label">Estado Civil</label>
-        <select class="form-select" id="estado_civil" required>
+        <select class="form-select" id="estado_civil" name="estado_civil" required>
           <optgroup label="Dado anterior">
             <option value="<?= $estado_civil;?>"><?=$estado_civil?></option>
           </optgroup>
@@ -93,25 +94,25 @@
 
       <div class="col-md-12">
         <label for="idade" class="form-label">Idade</label>
-        <input type="number" class="form-control" id="idade" value="<?=$idade;?>" min="10" max="120" step="1" required>
+        <input type="number" class="form-control" id="idade" name="idade" value="<?=$idade;?>" min="10" max="120" step="1" required>
         <div class="invalid-feedback">
-          <?=$idade;?>
+          Digite a sua idade.
         </div>
       </div>
 
       <div class="col-12">
         <label for="endereco" class="form-label">Endereço completo</label>
-        <input type="text" class="form-control" id="endereco" value="<?=$endereco;?>" placeholder="" required>
+        <input type="text" class="form-control" id="endereco" name="endereco" value="<?=$endereco;?>" placeholder="" required>
         <div class="invalid-feedback">
-         <?=$endereco?>
+         Digite o seu endereço.
         </div>
       </div>
 
       <div class="col-md-12">
         <label for="celular" class="form-label">Celular</label>
-        <input type="text" class="form-control" id="telefone" value="<?= $telefone;?>" placeholder="(99) 99999-9999" required>
+        <input type="text" class="form-control" id="telefone" name="telefone" value="<?= $telefone;?>" placeholder="(99) 99999-9999" required>
         <div class="invalid-feedback">
-          <?=$telefone;?>
+        Digite o número do seu celular com DDD.
         </div>
       </div>
 
@@ -119,9 +120,9 @@
         <label for="email" class="form-label">E-mail</label>
         <div class="input-group has-validation">
           <span class="input-group-text">@</span>
-          <input type="text" class="form-control" id="email" value="<?=$email;?>" placeholder="email@provedor.com" required>
+          <input type="text" class="form-control" id="email" name="email" value="<?=$email;?>" placeholder="email@provedor.com" required>
         <div class="invalid-feedback">
-            <?=$email;?>
+        Digite o seu e-mail.
           </div>
         </div>
       </div>
@@ -129,7 +130,7 @@
       </div>
       <br>
       <button class="w-100 btn btn-primary btn-lg" type="submit" name="bt_atualizar">
-      Cadastrar
+      Atualizar
       </button>
   
   </form>
