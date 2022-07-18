@@ -1,3 +1,17 @@
+<?php
+
+//session_start();
+
+session_start();
+include_once 'acoes/verifica-logado.php';
+include_once 'acoes/consulta-curso.php';
+
+
+
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
  <head>
@@ -28,7 +42,7 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">NOME</a>
+      <a class="navbar-brand" href="#"><?= $_SESSION['nome'] ?></a>
     </div>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="nav navbar-nav d-flex justify-content-end" id="links">
@@ -39,8 +53,7 @@
   </div>
 </nav>
 
-<!-- container fluido 100% -->
-<div class="container-fluid bg2 text-center" id="div-cursos">
+<!-- <div class="container-fluid bg2 text-center" id="div-cursos">
   <h3> <i class="bi bi-book"></i> Cursos </h3>
   <ul class="list-group lista" style="color:#222;">
     <li class="list-group-item">
@@ -60,7 +73,7 @@
     </li>
   </ul>
 
-<!-- modal OBS mudar o numero no id para ficar igual id no banco de dados -->
+
 <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -78,7 +91,25 @@
     </div>
   </div>
 </div>
-<!-- fim modal -->
+
+
+  <br>
+  <a href="#" class="btn btn-light btn-lg bt">
+    <i class="bi bi-arrow-up-circle"></i> Topo
+  </a>
+  
+</div> -->
+
+<div class="container-fluid bg2 text-center" id="div-cursos">
+
+  <?php include_once 'acoes/escreve-mensagem.php'; ?>
+
+  <h3> <i class="bi bi-book"></i> Cursos </h3>
+  
+  <ul class="list-group lista" style="color:#222;">
+    <!-- CONSULTAR CURSOS DO USUARIO POR ID -->
+    <?php include_once 'acoes/consulta-curso.php'; ?>
+  </ul>
 
   <br>
   <a href="#" class="btn btn-light btn-lg bt">
