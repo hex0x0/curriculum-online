@@ -58,7 +58,7 @@
     <!-- CONSULTAR CURSOS DO USUARIO POR ID -->
     <?php include_once 'acoes/consulta-formacao.php'; ?>
   </ul>
-
+</div>
   <br>
   <a href="#" class="btn btn-light btn-lg bt">
     <i class="bi bi-arrow-up-circle"></i> Topo
